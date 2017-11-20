@@ -38,3 +38,23 @@ function validateInput(input) {
   }
   return true;
 }
+
+function getResults(input){
+  let output = '<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">';
+
+  for (var i=0; i<input.length; i++){
+    if (input.charAt(i) == answer.value.charAt(i)){
+      output = output + '<span class="glyphicon glyphicon-ok"></span>';
+    }
+    else if (answer.value.indexOf(input.charAt(i)) > -1) {
+      output = output + '<span class="glyphicon glyphicon-transfer"></span>';
+    }
+    else {
+      output = output + '<span class="glyphicon glyphicon-remove"></span>'
+    }
+  }
+  output = output + '</div></div>';
+  document.getElementById('results').innerHTML += output;
+
+  
+}
