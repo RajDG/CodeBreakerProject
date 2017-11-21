@@ -28,14 +28,14 @@ function guess() {
 }
 
 //implement new functions here
-function showAnswer(successful){
+function showAnswer(success){
   var code = document.getElementById('code');
-  if (successful){
+  if (success){
     code.ClassName += ' success';
   } else {
     code.ClassName += ' failure';
   }
-  code.innerHTML = answer.value;
+  document.getElementById('code').innerHTML = answer.value;
 }
 
 function showReplay() {
