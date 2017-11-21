@@ -24,12 +24,12 @@ function guess() {
 }
 
 //implement new functions here
-function showAnswer(success){
+function showAnswer(successful){
   let code = document.getElementById('code');
-  if (success){
-    code.ClassName += " success";
+  if (successful){
+    code.ClassName += ' success';
   } else {
-    code.ClassName += " failure";
+    code.ClassName += ' failure';
   }
   code.innerHTML = answer.value;
 }
