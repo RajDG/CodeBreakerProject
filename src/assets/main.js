@@ -18,11 +18,21 @@ function guess() {
       setMessage("You Win! :)");
     } else if (attempt.value > 9) {
       setMessage("You Lose! :(");
+    } else {
+      setMessage("Incorrect, try again.");
     }
-
 }
 
 //implement new functions here
+function showAnswer(success){
+  let code = document.getElementById('code');
+  if (success){
+    code.ClassName += " success";
+  } else {
+    code.ClassName += " failure";
+  }
+}
+
 function setHiddenFields() {
   answer.value = Math.floor(Math.random() * 10000).toString();
 
