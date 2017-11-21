@@ -28,15 +28,6 @@ function guess() {
 }
 
 //implement new functions here
-// function showAnswer(success){
-//   var code = document.getElementById('code');
-//   if (success){
-//     code.ClassName += ' success';
-//   } else {
-//     code.ClassName += ' failure';
-//   }
-//   document.getElementById('code').innerHTML = answer.value;
-// }
 
 function showReplay() {
   document.getElementById('guessing-div').style.display = 'none';
