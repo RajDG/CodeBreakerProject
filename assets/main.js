@@ -29,7 +29,7 @@ function guess() {
 
 //implement new functions here
 function showAnswer(successful){
-  let code = document.getElementById('code');
+  var code = document.getElementById('code');
   if (successful){
     code.ClassName += ' success';
   } else {
